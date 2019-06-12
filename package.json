@@ -12,7 +12,8 @@
     "cdn:dashboard": "http-server ./dist/dashboard -p 8081",
     "npx-build-plus:copy-assets": "node projects/shell/copy-bundles.js",
     "build:dashboard:externals": "ng build --extra-webpack-config webpack.externals.js --prod --project dashboard --single-bundle --output-hashing none",
-    "build:shell:externals": "ng build --extra-webpack-config webpack.externals.js --prod --project shell --single-bundle --output-hashing none"
+    "build:shell:externals": "ng build --extra-webpack-config webpack.externals.js --prod --project shell --single-bundle --output-hashing none",
+    "serve:shell:externals":"ng s --project shell --prod --extra-webpack-config webpack.externals.js --proxy-config proxy.conf.json"
   },
   "private": true,
   "dependencies": {
